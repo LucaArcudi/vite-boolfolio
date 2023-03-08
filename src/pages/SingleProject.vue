@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <AppProject :project="project" />
+        <AppProject :project="project" :isShow="true" />
     </div>
 </template>
 <script>

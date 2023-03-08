@@ -14,7 +14,7 @@
             <p class="card-text mb-0">{{ project.description }}</p>
             <p class="card-text mt-3">{{ project.date }}</p>
         </div>
-        <div class="card-footer">
+        <div class="card-footer" v-if="!isShow">
             <router-link :to="{ name: 'project', params: { slug: project.id } }" class="btn btn-primary">{{
                 project.title }} details</router-link>
         </div>
@@ -32,6 +32,11 @@ export default {
         'project': {
             type: Object,
             required: true
+        },
+        'isShow': {
+            type: Boolean,
+            required: false,
+            default: false
         }
     }
 }
