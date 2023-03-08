@@ -23,7 +23,7 @@ export default {
         getProject() {
             axios.get(this.urlAddres + this.$route.params.slug, {
                 params: {
-
+                    'api_token': 'vkoi2b3PTpiwZvgdoJMtj1K00SeGf0XrAQ6IoG00tqq7x5an0yWuwblSQJrCLgJzyHHJvQuNWbdh3mFHWvpcagnA7o',
                 }
             })
                 .then((response) => {
